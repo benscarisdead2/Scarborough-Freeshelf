@@ -3,11 +3,11 @@
 one:
   title: MyString
   author: MyString
-  blurb: MyString
   url: MyString
+  description: MyString
 
 two:
   title: MyString
   author: MyString
-  blurb: MyString
   url: MyString
+  description: MyString

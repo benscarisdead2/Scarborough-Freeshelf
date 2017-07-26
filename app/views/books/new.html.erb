@@ -1,11 +1,5 @@
-<%= form_for @book do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :author %>
-  <%= f.text_field :author %>
-  <%= f.label :blurb %>
-  <%= f.text_field :blurb %>
-  <%= f.label :url %>
-  <%= f.text_field :url %>
-  <%= f.submit %>
-<% end %>
+<h1>Create a new Book</h1>
+
+<%= render "form", book: @book %>
+
+<%= link_to "Back", books_path %>
