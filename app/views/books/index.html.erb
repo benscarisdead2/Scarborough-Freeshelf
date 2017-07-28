@@ -7,7 +7,9 @@
   <%= book.title %>
   <%= book.author %>
   <%= link_to "Show", book %>
+  <% if current_user&.id == book.user_id %>
   <%= link_to "Edit", edit_book_path(book) %>
   <%= link_to "Destroy", book, method: :delete %>
+  <% end %>
   <br>
 <% end %>

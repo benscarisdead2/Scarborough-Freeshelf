@@ -4,7 +4,7 @@ class IntegrationTestHelpers < Loofah::TestCase
   context ".strip_tags" do
     context "on safe markup" do
       it "strip out tags" do
-        assert_equal "omgwtfbbq!!1!", Loofah::Helpers.strip_tags("<div>omgwtfbbq</div><span>!!1!</span>")
+        assert_equal "omgscarflix_!!1!", Loofah::Helpers.strip_tags("<div>omgscarflix_</div><span>!!1!</span>")
       end
     end
 
@@ -19,7 +19,7 @@ class IntegrationTestHelpers < Loofah::TestCase
   context ".sanitize" do
     context "on safe markup" do
       it "render the safe html" do
-        html = "<div>omgwtfbbq</div><span>!!1!</span>"
+        html = "<div>omgscarflix_</div><span>!!1!</span>"
         assert_equal html, Loofah::Helpers.sanitize(html)
       end
     end

@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Freeshelf</title>
+    <title>scarflix_</title>
     <%= csrf_meta_tags %>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <% if current_user %>
+      <%= link_to "logout", sessions_path %>
+      <%= link_to "profile", user_path(current_user) %>
+    <% else %>
+      <%= link_to "login", new_session_path %>
+      <%= link_to "create new user", new_user_path %>
+      <% end %>
+    <% link_to "home", books_path %>
     <%= yield %>
   </body>
 </html>
