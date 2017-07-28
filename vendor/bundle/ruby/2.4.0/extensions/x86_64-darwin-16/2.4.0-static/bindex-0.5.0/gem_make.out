@@ -1,0 +1,15 @@
+current directory: /Users/scaradmin/Desktop/rails/FAKE/freeshelf/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+/Users/scaradmin/.rbenv/versions/2.4.0/bin/ruby -r ./siteconf20170727-66462-beseea.rb extconf.rb
+creating Makefile
+
+current directory: /Users/scaradmin/Desktop/rails/FAKE/freeshelf/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/scaradmin/Desktop/rails/FAKE/freeshelf/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/scaradmin/Desktop/rails/FAKE/freeshelf/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20170727-66462-oy4fy0/bindex
